@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<title>Boletín de la SEMA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+<body class="w3-white w3-content" style="max-width:1600px">
+
+  <!-- Left sidebar -->
+  <div w3-include-html="sidebar.html"></div>
+
+  <!-- Right container -->
+  <div class="w3-main" style="margin-left:300px">
+    <div w3-include-html="header.html"></div>
+
+    <div class="w3-row-padding">
+
+	<!-- Page content -->
+	<!-- <div w3-include-html="boletin20se8.html"></div> -->
+   <h4 class="subsectionHead"><span class="titlemark">8.2.   </span> <a
+ id="x12-300008.2"></a>José Manuel González Vida, nuevo vocal del consejo ejecutivo de la
+SEMA</h4>
+   <div class="wrapfig-r"><img style="width:200px;"
+src="./figuras/jmvida3.jpg" alt="PIC"
+ />
+<div class="center"
+>
+<!--l. 1281--><p class="noindent" >
+</p><!--l. 1281--><p class="noindent" ><span
+class="ecrm-0800">Figura</span><span
+class="ecrm-0800"> 15</span><br />
+<a
+ id="x12-3000115"></a>
+<span
+class="eccc0800-"><span
+class="small-caps">J</span><span
+class="small-caps">.</span></span><span
+class="eccc0800-"> <span
+class="small-caps">M</span><span
+class="small-caps">.</span></span><span
+class="eccc0800-"> <span
+class="small-caps">G</span><span
+class="small-caps">o</span><span
+class="small-caps">n</span><span
+class="small-caps">z</span></span><span
+class="eccc0800-">á</span><span
+class="eccc0800-"><span
+class="small-caps">l</span><span
+class="small-caps">e</span><span
+class="small-caps">z</span> <span
+class="small-caps">V</span><span
+class="small-caps">i</span><span
+class="small-caps">d</span><span
+class="small-caps">a</span></span></p></div>        </div>
+<!--l. 1283--><p class="noindent" >El profesor José Manuel González Vida, de la Universidad de Málaga, fue elegido nuevo
+vocal del consejo ejecutivo de la SEMA durante la reunión de la asamblea anual de la
+SEMA, celebrada el 27 de junio de 2018. En dicha reunión, también renovaron sus
+cargos la profesora Rosa María Donat Beneito, como presidenta de la Sociedad,
+así como la profesora María Dolores Gómez Pedreira como vocal del consejo de
+ejecutivo.
+
+
+
+</p><!--l. 1286--><p class="indent" >   José Manuel González Vida es Doctor en Matemática Aplicada por la Universidad de
+Málaga y profesor titular de universidad en el Departamento de Matemática Aplicada de la
+misma Universidad. Miembro del grupo EDANYA (Ecuaciones Diferenciales, Análisis
+Numérico y Aplicaciones) desde 1997, desarrolla su actividad en el campo del análisis
+numérico de sistemas de ecuaciones en derivadas parciales hiperbólicos no conservativos y en
+el modelado de ﬂujos geofísicos. También se ha interesado por la implementación eﬁciente
+de los modelos numéricos desarrollados tanto en arquitecturas multicore como multiGPU. En
+este sentido, ha orientado su investigación bajo una vertiente multidisciplinar y aplicada, lo
+que le ha llevado en los últimos años a dirigir o codirigir diversos contratos de
+investigación en el marco de colaboraciones con entidades como el NCTR (NOAA Center for
+Tsunami Research, EE.UU.) o el INGV (Istituto Nazionale di Geoﬁsica e Vulcanologia,
+Italia) con el objetivo de implementar modelos numéricos robustos y muy eﬁcientes
+para ser puestos en funcionamiento en los sistemas de alerta temprana de tsunamis
+(TEWS) de diversos países. Como fruto de estas colaboraciones, se creó en el
+seno del grupo EDANYA, el modelo numérico Tsunami-HySEA, que ha supuesto
+un cambio de paradigma en el procedimiento hasta ahora estándar de los TEWS.
+Tsunami-HySEA es el modelo oﬁcial del sistema de alerta de tsunamis de Italia y España y
+actualmente se está trabajando en ponerlo en funcionamiento en Estados Unidos y Chile.
+</p>
+
+      </div><hr class="endfigure" />
+
+  <!-- End right container -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+  <script>
+    function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /* Loop through a collection of all HTML elements: */
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+		    elmnt = z[i];
+		    /*search for elements with a certain atrribute:*/
+		    file = elmnt.getAttribute("w3-include-html");
+		    if (file) {
+		    /* Make an HTTP request using the attribute value as the file name: */
+		    xhttp = new XMLHttpRequest();
+		    xhttp.onreadystatechange = function() {
+		    if (this.readyState == 4) {
+		    if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+		    if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+		    /* Remove the attribute, and call this function once more: */
+		    elmnt.removeAttribute("w3-include-html");
+		    includeHTML();
+		    }
+		    }
+		    xhttp.open("GET", file, true);
+		    xhttp.send();
+		    /* Exit the function: */
+		    return;
+		    }
+		    }
+		    }
+		    </script>
+
+  <script>
+    includeHTML();
+  </script>
+
+</body>
+</html>
